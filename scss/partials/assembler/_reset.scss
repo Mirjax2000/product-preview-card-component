@@ -1,0 +1,37 @@
+@use '../tools/' as *;
+
+// ---------------------
+/*  --- reset css --- */
+// ---------------------
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+body,
+section,
+article {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+// li {
+//     list-style-type: none;
+// }
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
