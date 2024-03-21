@@ -1,11 +1,12 @@
 /*   --- root css --- */
 :root {
-  --font-size:100%;
-  --H1:2rem;
-  --H2:0.75rem;
-  --H3:0.8125rem;
-  --par:0.875rem;
-  --btn:0.875rem;
+  --font-size: 100%;
+  --H1: 2rem;
+  --H2: 0.75rem;
+  --price-new: 2rem;
+  --price-old: 0.8125rem;
+  --par: 0.875rem;
+  --btn: 0.875rem;
 }
 
 /*   --- normalize css --- */
@@ -268,53 +269,8 @@ a {
 
 /* --- typography --- */
 @font-face {
-  font-family: "Outfit";
-  src: url(../assets/webfonts/Font-face/Outfit-Regular.woff2) format("woff2"), url(../assets/webfonts/Font-face/Outfit-Regular.ttf) format("truetype");
-  font-weight: 400;
-}
-@font-face {
-  font-family: "Outfit";
-  src: url(../assets/webfonts/Font-face/Outfit-SemiBold.woff2) format("woff2"), url(../assets/webfonts/Font-face/Outfit-SemiBold.ttf) format("truetype");
-  font-weight: 600;
-}
-@font-face {
-  font-family: "Outfit";
-  src: url(../assets/webfonts/Font-face/Outfit-Bold.woff2) format("woff2"), url(../assets/webfonts/Font-face/Outfit-Bold.ttf) format("truetype");
-  font-weight: 700;
-}
-@font-face {
-  font-family: "Figtree";
-  src: url(../assets/webfonts/Font-face/Figtree-Medium.woff2) format("woff2"), url(../assets/webfonts/Font-face/Figtree-Medium.ttf) format("truetype");
-  font-weight: 500;
-}
-@font-face {
-  font-family: "Figtree";
-  src: url(../assets/webfonts/Font-face/Figtree-ExtraBold.woff2) format("woff2"), url(../assets/webfonts/Font-face/Figtree-ExtraBold.ttf) format("truetype");
-  font-weight: 800;
-}
-@font-face {
-  font-family: "Inter";
-  src: url(../assets/webfonts/Font-face/Inter-Regular.woff2) format("woff2"), url(../assets/webfonts/Font-face/Inter-Regular.ttf) format("truetype");
-  font-weight: 400;
-}
-@font-face {
-  font-family: "Inter";
-  src: url(../assets/webfonts/Font-face/Inter-SemiBold.woff2) format("woff2"), url(../assets/webfonts/Font-face/Inter-SemiBold.ttf) format("truetype");
-  font-weight: 600;
-}
-@font-face {
-  font-family: "Inter";
-  src: url(../assets/webfonts/Font-face/Inter-Bold.woff2) format("woff2"), url(../assets/webfonts/Font-face/Inter-Bold.ttf) format("truetype");
-  font-weight: 700;
-}
-@font-face {
-  font-family: "Young Serif";
-  src: url(../assets/webfonts/Font-face/YoungSerif-Regular.woff2) format("woff2"), url(../assets/webfonts/Font-face/YoungSerif-Regular.ttf) format("truetype");
-  font-weight: 400;
-}
-@font-face {
   font-family: "Fraunces";
-  src: url(../assets/webfonts/Font-face/Fraunces_144pt-Bold.woff2) format("woff2"), url(../assets/webfonts/Font-face/Fraunces_144pt-Bold.ttf) format("truetype");
+  src: url(../assets/webfonts/Font-face/Fraunces_144pt_Soft-Bold.woff2) format("woff2"), url(../assets/webfonts/Font-face/Fraunces_144pt_Soft-Bold.ttf) format("truetype");
   font-weight: 700;
 }
 @font-face {
@@ -335,11 +291,11 @@ html {
   scroll-behavior: smooth;
 }
 html ::-moz-selection {
-  background-color: #F3E5D7;
+  background-color: #f2eae2;
   color: white;
 }
 html ::selection {
-  background-color: #F3E5D7;
+  background-color: #f2eae2;
   color: white;
 }
 
@@ -355,9 +311,8 @@ img {
 /* --- home main --- */
 .home {
   font-optical-sizing: auto;
-  background-color: #F3E5D7;
+  background-color: #f2eae2;
   height: 100svh;
-  max-width: 90em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -370,8 +325,85 @@ img {
 }
 
 .container {
-  max-width: 23.4375em;
+  max-width: 21.4375em;
   background-color: #ffffff;
+  border-radius: 0.625em;
+  overflow: hidden;
+}
+
+.card__content {
+  padding: 0 1.5em 1.5em 1.5em;
+}
+.card__content h2 {
+  font-family: Montserrat, serif;
+  font-size: var(--H2);
+  letter-spacing: 0.4166666667em;
+  line-height: 1.25em;
+  color: #6c7289;
+  font-weight: 500;
+  padding-block: 2em 1em;
+}
+.card__content h1 {
+  font-family: Fraunces, serif;
+  font-size: var(--H1);
+  line-height: 1em;
+  color: #1c232b;
+  font-weight: 700;
+}
+.card__content p:not(.price p, .btn p) {
+  font-family: Montserrat, serif;
+  font-size: var(--par);
+  line-height: 1.6428571429em;
+  color: #6c7289;
+  font-weight: 500;
+  margin-block: 1.1428571429em 1.7142857143em;
+}
+.card__content .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1.25em;
+}
+.card__content .price .price--new {
+  font-family: Fraunces, serif;
+  font-size: var(--price-new);
+  line-height: 1em;
+  color: #3d8168;
+  font-weight: 700;
+  margin-right: 0.59375em;
+}
+.card__content .price .price--old {
+  font-family: Montserrat, serif;
+  font-size: var(--price-old);
+  color: #6c7289;
+  line-height: 1.7692307692em;
+  font-weight: 500;
+  text-decoration: line-through;
+}
+.card__content .btn {
+  background-color: #3d8168;
+  border-radius: 0.625em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.card__content .btn img {
+  max-width: 0.9375em;
+  min-height: 1em;
+  background-color: #3d8168;
+}
+.card__content .btn p {
+  font-family: Montserrat, serif;
+  font-weight: 700;
 }
 
 /* mediaqueries */
