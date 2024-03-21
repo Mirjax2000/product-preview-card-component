@@ -1,6 +1,4 @@
-<!-- @format -->
-
-# Frontend Mentor - Recipe page solution
+# Frontend Mentor - Product card
 
 This is a solution to the [Recipe page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
@@ -21,8 +19,6 @@ Mobile first aproach
 trying to save some bandwidth and made smaller picture for mobile resolution, and used "Art direction" and "Resolution switching" technique for retina displays.
 also i compress jpeg to webp.
 i saved lots of kilobytes. And it has some role in SEO evaluation.
-
-Pseudoelements ::before for <ol></ol> list item
 
 ### Screenshot
 
@@ -92,15 +88,6 @@ Pseudoelements ::before for <ol></ol> list item
 
 Here i am self-hosting fonts compressed it to woff2,
 fallback to ttf.
-
-```css
-@font-face {
-    font-family: 'Young Serif';
-    src: url(../assets/webfonts/Font-face/YoungSerif-Regular.woff2) format('woff2'),
-        url(../assets/webfonts/Font-face/YoungSerif-Regular.ttf) format('truetype');
-    font-weight: 400;
-}
-```
 
 ### Continued development
 
