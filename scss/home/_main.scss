@@ -80,8 +80,19 @@
             align-items: center;
 
             padding-block: em(15, 16);
+            cursor: pointer;
+
+            transition: ease-in-out 0.2s background-color;
+            &:hover,
+            &:focus {
+                background-color: $clr-bg-card-btn-hover;
+                img {
+                    background-color: $clr-bg-card-btn-hover;
+                }
+            }
 
             img {
+                transition: ease-in-out 0.2s background-color;
                 max-width: em(15, 16);
                 min-height: em(16, 16);
                 background-color: $clr-bg-card-btn;

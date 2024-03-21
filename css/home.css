@@ -395,8 +395,19 @@ img {
       -ms-flex-align: center;
           align-items: center;
   padding-block: 0.9375em;
+  cursor: pointer;
+  -webkit-transition: ease-in-out 0.2s background-color;
+  transition: ease-in-out 0.2s background-color;
+}
+.card__content .btn:hover, .card__content .btn:focus {
+  background-color: #1a4032;
+}
+.card__content .btn:hover img, .card__content .btn:focus img {
+  background-color: #1a4032;
 }
 .card__content .btn img {
+  -webkit-transition: ease-in-out 0.2s background-color;
+  transition: ease-in-out 0.2s background-color;
   max-width: 0.9375em;
   min-height: 1em;
   background-color: #3d8168;
