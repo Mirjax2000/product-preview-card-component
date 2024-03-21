@@ -14,6 +14,7 @@
 
 .container {
     max-width: em(343, 16);
+    min-width: em(150, 16);
     background-color: $clr-bg-container;
     border-radius: em($br-card, 16);
     overflow: hidden;
@@ -22,8 +23,9 @@
 .card {
     &__content {
         padding: 0 em(24, 16) em(24, 16) em(24, 16);
+        font-family: $font-family-Montserrat;
+
         h2 {
-            font-family: $font-family-Montserrat;
             font-size: var(--H2); //12px
             letter-spacing: em(5, 12);
             line-height: em(15, 12);
@@ -40,7 +42,6 @@
             font-weight: 700;
         }
         p:not(.price p, .btn p) {
-            font-family: $font-family-Montserrat;
             font-size: var(--par); //14px
             line-height: em(23, 14);
             color: $clr-txt-p;
@@ -63,7 +64,6 @@
                 margin-right: em(19, 32);
             }
             .price--old {
-                font-family: $font-family-Montserrat;
                 font-size: var(--price-old); //13px
                 color: $clr-txt-price--old;
                 line-height: em(23, 13);
@@ -79,25 +79,21 @@
             justify-content: center;
             align-items: center;
 
+            padding-block: em(15, 16);
+
             img {
                 max-width: em(15, 16);
                 min-height: em(16, 16);
                 background-color: $clr-bg-card-btn;
             }
+
             p {
-                font-family: $font-family-Montserrat;
+                font-size: var(--btn); //14px
+                color: $clr-txt-btn;
+                line-height: em(17, 14);
                 font-weight: 700;
+                margin-left: em(11, 14);
             }
         }
     }
 }
-
-// /* Button Text */
-
-// font-weight: 700;
-// font-size: 14px;
-// line-height: 17px;
-// /* identical to box height */
-
-// /* Pure White */
-// color: #ffffff;

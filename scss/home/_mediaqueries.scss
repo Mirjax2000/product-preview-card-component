@@ -5,12 +5,53 @@
 /* mediaqueries */
 // ----------------------
 
-// @media only screen and (min-width: 501px) {
+@media only screen and (max-width: 225px) {
+    .card {
+        text-align: center;
 
-//     :root {
-//         --font-size:#{$font-size-100};
-//         --heading-L:#{$heading__L--Max};
-//     }
-// }
+        .card__content {
+            padding: 0 em(12, 16) em(24, 16) em(12, 16);
+            .price {
+                flex-direction: column;
+            }
+            .btn {
+                img {
+                    display: none;
+                }
+                p {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+}
 
-// ;
+@media only screen and (min-width: 650px) {
+    // :root {
+    //     --font-size: #{$font-size-100};
+    //     --heading-L: #{$heading__L--Max};
+    // }
+    .container {
+        max-width: em(600, 16);
+    }
+
+    .card {
+        display: flex;
+        justify-content: center;
+        & > * {
+            flex-basis: 50%;
+        }
+        &__content {
+            padding: 0 em(32, 16) em(32, 16) em(32, 16);
+            h2 {
+                padding-block: em(32, 12) em(20, 12);
+            }
+            p:not(.price p, .btn p) {
+                margin-block: em(24, 14) em(30, 14);
+            }
+            .price {
+                margin-bottom: em(30, 16);
+            }
+        }
+    }
+}
