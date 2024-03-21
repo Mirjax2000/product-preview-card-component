@@ -7,17 +7,13 @@
 
 .home {
     font-optical-sizing: auto;
-    background-color: $clr-bg-body ;
-    // height: 100dvh;
-    // width: 100dvw;
-    // @include flexCenter;
+    background-color: $clr-bg-body;
+    height: 100svh;
+    max-width: em(1440, 16);
+    @include flexCenter;
 }
-
-
 
 .container {
     max-width: em(375, 16);
-    background-color: $clr-bg-container ;
-
+    background-color: $clr-bg-container;
 }
-

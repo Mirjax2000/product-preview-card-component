@@ -47,8 +47,10 @@
 // Figtree - 800
 @font-face {
     font-family: 'Figtree';
-    src: url(../assets/webfonts/Font-face/Figtree-ExtraBold.woff2) format('woff2'),
-        url(../assets/webfonts/Font-face/Figtree-ExtraBold.ttf) format('truetype');
+    src: url(../assets/webfonts/Font-face/Figtree-ExtraBold.woff2)
+            format('woff2'),
+        url(../assets/webfonts/Font-face/Figtree-ExtraBold.ttf)
+            format('truetype');
     font-weight: 800;
 }
 
@@ -79,7 +81,37 @@
 // Young Serif - 400
 @font-face {
     font-family: 'Young Serif';
-    src: url(../assets/webfonts/Font-face/YoungSerif-Regular.woff2) format('woff2'),
-        url(../assets/webfonts/Font-face/YoungSerif-Regular.ttf) format('truetype');
+    src: url(../assets/webfonts/Font-face/YoungSerif-Regular.woff2)
+            format('woff2'),
+        url(../assets/webfonts/Font-face/YoungSerif-Regular.ttf)
+            format('truetype');
     font-weight: 400;
+}
+
+// Fraunces - 700
+@font-face {
+    font-family: 'Fraunces';
+    src: url(../assets/webfonts/Font-face/Fraunces_144pt-Bold.woff2)
+            format('woff2'),
+        url(../assets/webfonts/Font-face/Fraunces_144pt-Bold.ttf)
+            format('truetype');
+    font-weight: 700;
+}
+
+// Montserrat - 500
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../assets/webfonts/Font-face/Montserrat-Medium.woff2)
+            format('woff2'),
+        url(../assets/webfonts/Font-face/Montserrat-Medium.ttf)
+            format('truetype');
+    font-weight: 500;
+}
+
+// Montserrat - 700
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../assets/webfonts/Font-face/Montserrat-Bold.woff2) format('woff2'),
+        url(../assets/webfonts/Font-face/Montserrat-Bold.ttf) format('truetype');
+    font-weight: 700;
 }

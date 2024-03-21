@@ -60,21 +60,34 @@ Pseudoelements ::before for <ol></ol> list item
 <p>"Art direction" and "Resolution switching"</p>
 
 ```html
-<div class="card__img">
-    <img
-        sizes="(max-width:770px) calc(100vw - 80px), 736px"
+<picture>
+    <source
+        media="(max-width: 650px)"
+        type="image/webp"
+        width="343"
+        height="240"
+        sizes="(min-width:343px) 343px, 100vw"
+        src="(max-width:343px)"
         srcset="
-            ./assets/img/main_325-test.webp   325w,
-            ./assets/img/main_650-test.webp   650w,
-            ./assets/img/main_1300-test.webp 1300w,
-            ./assets/img/main_2600-test.webp 2600w
+            ./assets/img/mobile-343-test.webp 343w,
+            ./assets/img/mobile-686-test.webp 686w
         "
-        src="./assets/img/main_1300-test.webp"
-        width="1300"
-        height="594"
-        alt="Omelet from recipe"
     />
-</div>
+    <img
+        src="./assets/img/mobile-343-test.webp"
+        width="300"
+        height="450"
+        sizes="(min-width:650px) 300px, 50vw"
+        srcset="
+            ./assets/img/desktop-300-test.webp 300w,
+            ./assets/img/desktop-600-test.webp 600w
+        "
+        decoding="async"
+        loading="eager"
+        title="parfum bottle"
+        alt="parfum bottle"
+    />
+</picture>
 ```
 
 Here i am self-hosting fonts compressed it to woff2,
@@ -88,7 +101,6 @@ fallback to ttf.
     font-weight: 400;
 }
 ```
-
 
 ### Continued development
 
